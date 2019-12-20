@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bread App</title>
+    <link rel="stylesheet" href="node_modules/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+          <!-- Initial Page, "data-name" contains page name -->
+          <div data-name="home" class="page">
+            <!-- Top Navbar -->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="title">Bread Club</div>
+              </div>
+            </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <!-- Link to another page -->
+              <div class="list">
+                <ul>
+                  <li><a href="/bread/" class="item-link item-content">
+                      <div class="item-inner">
+                        <div class="item-title">Bread Recipes</div>
+                      </div>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Path to Framework7 Library JS-->
+      <script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+      <script type="text/javascript" src="app.js"></script>
+    </body>
+    </html>
