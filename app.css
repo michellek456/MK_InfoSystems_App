@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: aqua;
+    background-color: navy;
     color: antiquewhite;
   }
 
@@ -33,26 +33,26 @@
   }
 
   .item-inner {
-    background-color: white;
+    background-color: rgb(148, 34, 34);
     color: black;
   }
 
   .item-content {
     background-color: white;
-    color: white;
+    color: rgb(109, 47, 47);
   }
 
   .navbar-inner {
     background-color: rgb(152, 236, 236);
-    color: white;
+    color: rgb(80, 11, 11);
   }
 
   .f7-icons {
-    color: white;
+    color: rgb(146, 37, 37);
   }
 
   .ios-only {
-    color: white;
+    color: rgb(126, 21, 21);
   }
 
   .page-content {

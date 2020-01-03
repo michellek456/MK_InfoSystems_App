@@ -1,31 +1,51 @@
 <template>
-    <div class="page" data-page="weblinks">
-      <div class="navbar">
-        <div class="navbar-inner sliding">
-          <div class="left">
-            <a href="#" class="link back">
-              <i class="icon icon-back"></i>
-              <span class="ios-only">Back</span>
-            </a>
-          </div>
-          <div class="title">Bread</div>
+  <div class="page" data-page="weblinks">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="f7-icons">arrow_left</i>
+            <span class="ios-only">Back</span>
+            <span class="md-only"></span>
+          </a>
         </div>
+        <div class="title">Bread Recipes</div>
       </div>
-      <div class="list-index"></div>
-      <div class="page-content">
-      <div class="list links-list">
+    </div>
+    <div class="list-index"></div>
+    <div class="page-content">
+      <div class="block-title">List of Recipes</div>
+      <div class="list media-list">
         <ul>
-        {{#each $root.bread}}
-        <li><a href="/detail/{{@index}}/">{{Bread}}</a></li>
-        {{/each}}
-      </ul>
+          {{#each $root.bread}}
+          <li>
+            <a href="/details/{{@index}}/">
+              <div class="item-inner">
+                <div class="item-content">
+                  <div class="item-title" style="color: rgb(33,33,33);color:#212121">{{Bread}}
+                  </div>
+                  <div class="item-media">
+                    <img src="{{Image}}" width="140" height="120" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+
+      <div class="detailFooter">
+        <p style="font-size: 15px;">&copy; 2020 Michelles Bakers Club All Rights Reserved</p>
+      </div>
+
+
     </div>
   </div>
-</div>
-</div>
 </template>
 <script>
-     return {}
+  return {}
   var listIndex = app.listIndex.create({
     // ".list-index" element
     el: '.list-index',
@@ -40,9 +60,3 @@
   });
 </script>
 <!-- More info on lists available at https://framework7.io/docs/list-index.html  -->
-<head>
-
-</head>
-<body>
-
-</body>

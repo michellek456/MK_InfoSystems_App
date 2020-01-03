@@ -19,9 +19,9 @@ var app = new Framework7({
     },
     // detail page (notice we pass a paramater!)
     {
-      path: '/detail/:id',
-      componentUrl: './detail.html',
-      name: 'detail',
+      path: '/details/:id',
+      componentUrl: './details.html',
+      name: 'details',
     },
   ],
 });
