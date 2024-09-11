@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "framework7": "^3.4.3"
+    "framework7": "^3.6.7"
   }
 }
